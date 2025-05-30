@@ -44,7 +44,6 @@ const Booking = ({tour, avgRating}) => {
                 method:'post',
                 headers:{
                     'content-type':'application/json',
-                    'Authorization': `Bearer ${token}`
                 },
                 credentials:'include',
                 body:JSON.stringify(booking)
