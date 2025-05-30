@@ -6,6 +6,8 @@ import calculateAvgRating from '../utils/avgRating'
 import avatar from '../assets/images/avatar.jpg'
 import Booking from '../components/Booking/Booking'
 import Newsletter from '../shared/Newsletter'; 
+import { getReviewWord } from './../utils/pluralize';
+
 
 import useFetch from './../hooks/useFetch'
 import { BASE_URL } from './../utils/config'
@@ -126,7 +128,8 @@ const ToursDetails = () => {
           </div>
           {/* =========== tour reviews section start =============*/}
           <div className="tour__reviews mt-4">
-            <h4>Відгуки ({reviews?.length} відгуки)</h4>
+            <h4>Відгуки ({reviews?.length} {getReviewWord(reviews?.length)})</h4>
+
 
             <Form onSubmit={submitHandler}>
               <div className="d-flex align-items-center gap-3 mb-4 rating__group">
