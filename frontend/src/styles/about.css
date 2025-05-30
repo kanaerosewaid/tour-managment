@@ -1,0 +1,131 @@
+
+
+.about-section {
+  padding: 40px 0; 
+  background-color: var(--background-color); 
+}
+
+
+.about-block {
+  background-color: var(--block-bg-color);
+  border-radius: 10px;
+  padding: 18px 20px;
+  margin-bottom: 10px; 
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.07);
+  transition: box-shadow 0.25s ease, transform 0.25s ease;
+  will-change: transform;
+}
+
+.about-block:hover {
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+  transform: scale(1.05);
+}
+
+.about-block--image-text {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 18px 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.07);
+  background-color: var(--block-bg-color);
+  transition: box-shadow 0.25s ease, transform 0.25s ease;
+}
+
+.about-block--image-text:hover {
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+  transform: scale(1.05);
+}
+
+.about-block--image-text .about-img {
+  width: 100%;
+  border-radius: 10px;
+  box-shadow: none;
+  margin: 0;
+  object-fit: cover;
+  transition: transform 0.25s ease;
+}
+
+.about-block--image-text .about-img:hover {
+  transform: scale(1.03);
+}
+
+
+.about-block--image-text .row {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.about-block--image-text .col-lg-6 {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+
+.about-title {
+  font-size: 1.8rem;
+  font-weight: 600;
+  margin-bottom: 16px;
+  color: var(--heading-color);
+}
+
+.about-subtitle {
+  font-size: 1.3rem;
+  font-weight: 500;
+  margin-bottom: 10px;
+  color: var(--secondary-text-color);
+}
+
+
+.about-text {
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: var(--text-color);
+  margin-bottom: 8px;
+}
+
+/* Списки */
+.about-list {
+  list-style: none;
+  padding-left: 0;
+  color: var(--secondary-text-color);
+}
+
+.about-list li {
+  position: relative;
+  padding-left: 1.4rem;
+  margin-bottom: 8px;
+  font-size: 0.95rem;
+  color: var(--text-color);
+}
+
+
+
+.pagination span {
+  width: 2rem;
+  height: 2rem;
+  padding: 5px;
+  border-radius: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid var(--secondary-color);
+  color: var(--heading-color);
+  font-size: 1.1rem;
+  cursor: pointer;
+  font-weight: 700;
+  user-select: none;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.pagination span:hover {
+  background-color: var(--secondary-color);
+  color: #fff;
+}
+
+.active__page {
+  background-color: var(--secondary-color);
+  color: #fff !important;
+  box-shadow: 0 0 8px var(--secondary-color);
+  cursor: default;
+}
